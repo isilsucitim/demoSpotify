@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="subtitleCell" id="gTV-IL-0wX" customClass="SubTitleHeaderCell" customModule="Spotify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XFI-sJ-Hro">
+                        <rect key="frame" x="6" y="27" width="363" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cID-jV-jpW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT3-dG-07Y">
+                        <rect key="frame" x="6" y="0.0" width="364" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gT3-dG-07Y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="7Ta-dR-VCo"/>
+                <constraint firstItem="gT3-dG-07Y" firstAttribute="leading" secondItem="XFI-sJ-Hro" secondAttribute="leading" id="Mon-RV-JsX"/>
+                <constraint firstItem="gT3-dG-07Y" firstAttribute="centerX" secondItem="XFI-sJ-Hro" secondAttribute="centerX" id="Nah-kl-ulv"/>
+                <constraint firstItem="gT3-dG-07Y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="6" id="oKa-9m-adG"/>
+                <constraint firstItem="XFI-sJ-Hro" firstAttribute="top" secondItem="gT3-dG-07Y" secondAttribute="bottom" constant="6" id="siF-mZ-SSW"/>
+                <constraint firstItem="gT3-dG-07Y" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vRl-TS-juf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="lblSubTitle" destination="XFI-sJ-Hro" id="hPb-TY-h3H"/>
+                <outlet property="lblTitle" destination="gT3-dG-07Y" id="khn-Kx-Sxc"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
